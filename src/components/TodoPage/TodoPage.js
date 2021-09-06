@@ -23,11 +23,11 @@ const TodoPage=()=>{
     return(
         <div className={"todolist"}>
             {renderTodos}
-            <Pagination
+           {/* <Pagination
                 defaultCurrent={1}
                 defaultPageSize={4} //default size of page
                 total={3} //total number of card data available
-            />
+            />*/}
         </div>
     )
 };

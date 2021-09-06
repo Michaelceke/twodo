@@ -19,9 +19,7 @@ const PageHeader = () => {
                         <NavLink
                             to="/"
                             exact
-                            activeStyle={{
-                                color: "#25f525",
-                            }}
+
                             className={"headerNavLink"}
                         >
                             Add Todos
@@ -30,7 +28,6 @@ const PageHeader = () => {
                         <NavLink
                             to="/cart"
                             exact
-                            activeStyle={{ color: "#25f525" }}
                             className={"headerNavLink"}
                         >
                             View All Todos

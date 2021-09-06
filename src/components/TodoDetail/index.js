@@ -9,7 +9,7 @@ const  TodoDetail=({todo})=>{
         <div className={"todo-detail"}  >
             <span className={"title"}>Todo Title:</span>
             <div className={"todo-content"}>
-                <div className={"todo-text"}>{title}</div>
+                <div className={"todo-text"}>{title.charAt(0).toUpperCase() + title.slice(1)}</div>
                 <div>  <Tag color={(completed)?"orange":"red"}>{(completed)?"Completed":"Pending"}</Tag>
                     <Button type="primary" size={"small"} shape={"round"} ghost style={{margin:"2px"}}>
                         Edit
