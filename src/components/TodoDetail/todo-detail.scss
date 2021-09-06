@@ -1,0 +1,17 @@
+.todo-detail{
+  margin: 10px 30% 10px 30%;
+  border:2px solid black;
+  height:120px;
+  border-radius:10px;
+  .title{
+    border-bottom: 1px solid black;
+    margin: 20px;
+    margin-bottom:40px !important;
+  }
+  .todo-content{
+    display:flex;
+    justify-content: space-between;
+    margin:20px;
+    margin-top:10px;
+  }
+}

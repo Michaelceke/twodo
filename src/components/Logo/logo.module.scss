@@ -1,0 +1,26 @@
+$fontFamily: "Quicksand", sans-serif;
+$fontSize: 2.5rem;
+$lineHeight: 25px;
+$fontWeight: 500;
+$primaryFontColor: #000;
+$secondaryFontColor: rgba(black,0.5);
+
+.logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2px;
+
+}
+.logoLink {
+  align-self: center;
+  font-family: $fontFamily;
+  font-size: $fontSize;
+  font-weight: $fontWeight;
+  line-height: $lineHeight;
+  color: $secondaryFontColor;
+  margin-bottom: 5px;
+  &:hover {
+    color: #000;
+  }
+}

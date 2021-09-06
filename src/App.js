@@ -1,23 +1,16 @@
-import logo from './logo.svg';
+import React,{Suspense} from "react";
+import 'antd/dist/antd.css'
 import './App.css';
+const PageLayout=React.lazy(()=>import("./components/Layout"));
+const LazyFallback = () => <h4>Loading...</h4>;
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <Suspense fallback={<LazyFallback />}>
+            <PageLayout/>
+        </Suspense>
+
     </div>
   );
 }
